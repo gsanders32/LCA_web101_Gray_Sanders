@@ -1,0 +1,102 @@
+/* Extra Small and up (Portrait Phones) */
+
+/* Small and up (Landscape Phones) */
+@media (min-width: 320px) {
+    main {
+        grid-template-columns: 5% 90% 5%;
+    }
+
+    #profile-pic {
+        /* margin: auto; */
+        height: 175px;
+        width: 175px;
+    }
+    
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 30px;
+    }
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 30% 40% 30%;
+    }
+    #profile-pic {
+        /* margin: 30% auto 5%; */
+        height: 250px;
+        width: 250px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+    main {
+        grid-template-columns: 30% 40% 30%;
+    }
+    #profile-pic {
+        margin: 20% auto 5%;
+        height: 300px;
+        width: 300px;
+    }
+    h1 {
+        font-size: 70px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    button {
+        width: 70%;
+        font-size: 35px;
+    }
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+@media (min-width: 1200px) {
+    main {
+        grid-template-columns: 30% 40% 30%;
+    }
+    #profile-pic {
+        margin: 5% auto 5%;
+        height: 350px;
+        width: 350px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    button {
+        width: 70%;
+        font-size: 45px;
+    }
+}
