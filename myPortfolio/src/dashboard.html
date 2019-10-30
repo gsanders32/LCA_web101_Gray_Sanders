@@ -3,9 +3,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <!-- <link rel="stylesheet" href="./css/carousel.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Dashboard</title>
 </head>
 <body>
-    
+    <nav class="topnav" id="myTopnav">
+        <img class="navigation-bar" src="../image/gslogo.png" alt="logo">
+        <a href="#">Contact</a>
+        <a href="./blog.html">Blog</a>
+        <a href="#">About</a>
+        <a href="./resume.html">Resume</a>
+        <a href="../index.html">Home</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+    </nav>
+    <div class="container">
+        <!-- <h1>Welcome!</h1> -->
+        <div class="card">
+            <div class="inspiration">
+                    <img class="cardImg" src="./image/art2.jpg" alt="Pic of Dog">
+                    <div class="dateTime">
+                        <script> document.write(new Date().toDateString()); </script><br />
+                        <script> document.write(new Date().toLocaleTimeString()); </script>
+                    </div>
+                    <div class="message">
+                        What Are You Doing Today?
+                    </div>
+            </div>
+        </div>
+        <div class="innerContainer">
+            <div class="card">
+                <h2 class="cardTitle">Calculator</h2><hr />
+        
+            </div>
+            <div class="card">
+                <h2 class="cardTitle">Todo List</h2><hr />
+                <div class="todoWrapper">
+                    <ul class="todoList">
+                        <li>
+                            <input type="checkbox" id="1" checked>
+                            <label for="1">Inspiration Greeting</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="2">
+                            <label for="2">Calculator</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="3" checked>
+                            <label for="3">Date</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="4" checked>
+                            <label for="4">Time</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="4" checked>
+                            <label for="4">Background Image</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 </html>

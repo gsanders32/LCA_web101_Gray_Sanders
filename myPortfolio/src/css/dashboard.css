@@ -1,0 +1,141 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10px;
+  /* overflow: hidden; */
+}
+
+.innerContainer {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+h1 {
+  color: #f2f2f2;
+  font-size: 2em;
+  text-align: center;
+}
+
+.card {
+  background-color: #f2f2f2;
+  border-radius: 2px;
+  border-top: 5px solid #008CBA;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.cardImg {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: bold;
+  /* padding-bottom: 0px; */
+}
+
+hr {
+  margin-top: 1px;
+  /* height: 1px;
+  color: #008CBA;
+  background-color: #008CBA;
+  border: none; */
+}
+
+.inspiration {
+  position: relative;
+}
+
+.dateTime {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding: 5px;
+  padding-bottom: 10px;
+  background: rgb(242,242,242, 0.4);
+  height: 30px;
+  border-radius: 2px;
+  color: #f2f2f2;
+}
+
+.message {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  margin-left: -100px;
+  padding: 5px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  background: rgb(242,242,242, 0.5);
+  height: 25px;
+  border-radius: 2px;
+  color: #f2f2f2;
+}
+
+.todoList{
+	list-style-type: none;
+	color: rgba(0,0,0,.7);
+}
+
+.todoList li{
+	float: left;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.todoList li:nth-child(odd){
+  background: rgba(0,0,50,.1);
+  border-radius: 2px;
+}
+
+label{
+  padding: 5px;
+	cursor: pointer;
+	float: left;
+	width: 95%;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  float: right;
+  top: 22px;
+  right: 12px;
+}
+
+input[type="checkbox"]:checked + label{
+	text-decoration: line-through;
+	color: rgba(0,0,0,.3);
+}
+
+@media (min-width: 800px) { 
+  .innerContainer {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cardImg {
+    height: 500px;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  .dateTime {
+    font-size: 30px;
+    height: 60px;
+  }
+
+  .message {
+    font-size: 30px;
+    height: 40px;
+    margin-left: -165px;
+  }
+
+  .cardTitle {
+    font-size: 25px;
+  }
+}

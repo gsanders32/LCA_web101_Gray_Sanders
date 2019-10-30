@@ -2,7 +2,7 @@ body, html{
     margin: 0px;
     padding-bottom: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    background: url("../image/background07.png") no-repeat center center fixed;
+    background: url("../image/background.jpg") no-repeat center center fixed;
     background-size: cover;
     height: 100%;
   }
