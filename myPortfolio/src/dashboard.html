@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="./css/calculator.css">
     <!-- <link rel="stylesheet" href="./css/carousel.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Dashboard</title>
@@ -39,7 +40,30 @@
         <div class="innerContainer">
             <div class="card">
                 <h2 class="cardTitle">Calculator</h2><hr />
-        
+                <div class="calculator">
+                    <form name="cal">
+                        <input type="text" name="output" class="output" disabled> 
+                        <div class="keys">
+                            <button type="button" class="number blue" value="+" onclick="cal.output.value += '+'">+</button>
+                            <button type="button" class="number blue" value="-" onclick="cal.output.value += '-'">-</button>
+                            <button type="button" class="number blue" value="x" onclick="cal.output.value += '*'">&times;</button>
+                            <button type="button" class="number blue" value="/" onclick="cal.output.value += '/'">&divide;</button>
+                            <button type="button" class="number" value="7" onclick="cal.output.value += '7'">7</button>
+                            <button type="button" class="number" value="8" onclick="cal.output.value += '8'">8</button>
+                            <button type="button" class="number" value="9" onclick="cal.output.value += '9'">9</button>
+                            <button type="button" class="number" value="4" onclick="cal.output.value += '4'">4</button>
+                            <button type="button" class="number" value="5" onclick="cal.output.value += '5'">5</button>
+                            <button type="button" class="number" value="6" onclick="cal.output.value += '6'">6</button>
+                            <button type="button" class="number" value="1" onclick="cal.output.value += '1'">1</button>
+                            <button type="button" class="number" value="2" onclick="cal.output.value += '2'">2</button>
+                            <button type="button" class="number" value="3" onclick="cal.output.value += '3'">3</button>
+                            <button type="button" class="number" value="0" onclick="cal.output.value += '0'">0</button>
+                            <button type="button" class="number" value="." onclick="cal.output.value += '.'">.</button>
+                            <button type="button" class="clear" value="AC" onclick="cal.output.value = ''">AC</button>
+                            <button type="button" class="equal"value="=" onclick="cal.output.value = eval(cal.output.value)">=</button>
+                        </div>
+                    </form>
+                </div>
             </div>
             <div class="card">
                 <h2 class="cardTitle">Todo List</h2><hr />
