@@ -45,7 +45,8 @@ body, html{
   }
 
   @media screen and (max-width: 600px) {
-      .topnav img,a:not(.active) {display: none;}
+      .topnav  a:not(.active) {display: none;}
+      .navigation-bar {display: none;}
       .topnav a.icon {
       float: left;
       display: block;
