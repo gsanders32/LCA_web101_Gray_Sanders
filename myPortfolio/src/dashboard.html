@@ -1,0 +1,226 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="./css/calculator.css">
+    <link rel="stylesheet" href="./css/calculatorFlexGrid.css">
+    <link rel="stylesheet" href="./css/calendar.css">
+    <!-- <link rel="stylesheet" href="./css/calculatorFlexGrid.css"> -->
+    <!-- <link rel="stylesheet" href="./css/carousel.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <nav class="topnav" id="myTopnav">
+        <img class="navigation-bar" src="../image/gslogo.png" alt="logo">
+        <a href="#">Contact</a>
+        <a href="./blog.html">Blog</a>
+        <a href="#">About</a>
+        <a href="./resume.html">Resume</a>
+        <a href="../index.html">Home</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+    </nav>
+    <div class="container">
+        <!-- <h1>Welcome!</h1> -->
+        <div class="card">
+            <div class="inspiration">
+                    <img class="cardImg" src="./image/art2.jpg" alt="Pic of Dog">
+                    <div class="dateTime">
+                        <script> document.write(new Date().toDateString()); </script><br />
+                        <div id="clock"></div>
+                    </div>
+                    <div class="message">
+                        <p>Gray</p>
+                        <p>What Are You Doing Today?</p>
+                    </div>
+            </div>
+        </div>
+        <div class="innerContainer">
+            <div class="card">
+                <h2 class="cardTitle">Calculator - CSS Grid</h2><hr />
+                <div class="calculator">
+                    <form name="cal">
+                        <input type="text" name="output" class="output" disabled> 
+                        <div class="keys">
+                            <button type="button" class="number blue" value="+" onclick="cal.output.value += '+'">+</button>
+                            <button type="button" class="number blue" value="-" onclick="cal.output.value += '-'">-</button>
+                            <button type="button" class="number blue" value="x" onclick="cal.output.value += '*'">&times;</button>
+                            <button type="button" class="number blue" value="/" onclick="cal.output.value += '/'">&divide;</button>
+                            <button type="button" class="number" value="7" onclick="cal.output.value += '7'">7</button>
+                            <button type="button" class="number" value="8" onclick="cal.output.value += '8'">8</button>
+                            <button type="button" class="number" value="9" onclick="cal.output.value += '9'">9</button>
+                            <button type="button" class="number" value="4" onclick="cal.output.value += '4'">4</button>
+                            <button type="button" class="number" value="5" onclick="cal.output.value += '5'">5</button>
+                            <button type="button" class="number" value="6" onclick="cal.output.value += '6'">6</button>
+                            <button type="button" class="number" value="1" onclick="cal.output.value += '1'">1</button>
+                            <button type="button" class="number" value="2" onclick="cal.output.value += '2'">2</button>
+                            <button type="button" class="number" value="3" onclick="cal.output.value += '3'">3</button>
+                            <button type="button" class="number" value="0" onclick="cal.output.value += '0'">0</button>
+                            <button type="button" class="number" value="." onclick="cal.output.value += '.'">.</button>
+                            <button type="button" class="clear" value="AC" onclick="cal.output.value = ''">AC</button>
+                            <button type="button" class="equal"value="=" onclick="cal.output.value = eval(cal.output.value)">=</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                    <h2 class="cardTitle">Calculator - FlexGrid</h2><hr />
+                    <div class="calculatorFlex">
+                        <form name="calFlex">
+                            <input type="text" name="outputFlex" class="outputFlex" disabled> 
+                            <div class="wrapper">
+                            <div class="keysFlexOuter">
+                                <button type="button" class="numberFlex blueFlex buttonFlex" value="+" onclick="calFlex.outputFlex.value += '+'">+</button>
+                                <button type="button" class="numberFlex blueFlex buttonFlex" value="-" onclick="calFlex.outputFlex.value += '-'">-</button>
+                                <button type="button" class="numberFlex blueFlex buttonFlex" value="x" onclick="calFlex.outputFlex.value += '*'">&times;</button>
+                                <button type="button" class="numberFlex blueFlex buttonFlex" value="/" onclick="calFlex.outputFlex.value += '/'">&divide;</button>
+                            
+                            
+                                <button type="button" class="numberFlex buttonFlex" value="7" onclick="calFlex.outputFlex.value += '7'">7</button>
+                                <button type="button" class="numberFlex buttonFlex" value="8" onclick="calFlex.outputFlex.value += '8'">8</button>
+                                <button type="button" class="numberFlex buttonFlex" value="9" onclick="calFlex.outputFlex.value += '9'">9</button>
+                                <button type="button" class="numberFlex buttonFlex" value="4" onclick="calFlex.outputFlex.value += '4'">4</button>
+                                <button type="button" class="numberFlex buttonFlex" value="5" onclick="calFlex.outputFlex.value += '5'">5</button>
+                                <button type="button" class="numberFlex buttonFlex" value="6" onclick="calFlex.outputFlex.value += '6'">6</button>
+                                <button type="button" class="numberFlex buttonFlex" value="1" onclick="calFlex.outputFlex.value += '1'">1</button>
+                                <button type="button" class="numberFlex buttonFlex" value="2" onclick="calFlex.outputFlex.value += '2'">2</button>
+                                <button type="button" class="numberFlex buttonFlex" value="3" onclick="calFlex.outputFlex.value += '3'">3</button>
+                                <button type="button" class="numberFlex buttonFlex" value="0" onclick="calFlex.outputFlex.value += '0'">0</button>
+                                <button type="button" class="numberFlex buttonFlex" value="." onclick="calFlex.outputFlex.value += '.'">.</button>
+                                <button type="button" class="numberFlex clearFlex buttonFlex" value="AC" onclick="calFlex.outputFlex.value = ''">AC</button>
+                            
+                                <button type="button" class="numberFlex equalFlex buttonFlex"value="=" onclick="calFlex.outputFlex.value = eval(calFlex.outputFlex.value)">=</button>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            <div class="card">
+                <h2 class="cardTitle">Todo List</h2><hr />
+                <div class="todoWrapper">
+                    <ul class="todoList">
+                        <li>
+                            <input type="checkbox" id="1" checked>
+                            <label for="1">Inspiration Greeting</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="2">
+                            <label for="2">Calculator</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="3" checked>
+                            <label for="3">Date</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="4" checked>
+                            <label for="4">Time</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="4" checked>
+                            <label for="4">Background Image</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="cardTitle">Calendar</h2><hr />
+                <div class="calendarContainer">
+                    <div class="calendarRows">
+                        <div class="monthGrid">
+                            <div></div>
+                            <div class="month">October - 2019</div>
+                            <!-- <div></div> -->
+                        </div>                    
+                    <div class="days">                       
+                        <div class="weekday">Su</div>
+                        <div class="weekday">Mo</div>
+                        <div class="weekday">Tu</div>
+                        <div class="weekday">We</div>
+                        <div class="weekday">Th</div>
+                        <div class="weekday">Fr</div>
+                        <div class="weekday">Sa</div>
+                        <div class="light">29</div>
+                        <div class="light">30</div>
+                        <div class="dayNum">1</div>
+                        <div class="dayNum">2</div>
+                        <div class="dayNum">3</div>
+                        <div class="dayNum">4</div>
+                        <div class="dayNum">5</div>
+                        <div class="dayNum">6</div>
+                        <div class="dayNum">7</div>
+                        <div class="dayNum">8</div>
+                        <div class="dayNum">9</div>
+                        <div class="dayNum">10</div>
+                        <div class="dayNum">11</div>
+                        <div class="dayNum">12</div>
+                        <div class="dayNum">13</div>
+                        <div class="dayNum">14</div>
+                        <div class="dayNum">15</div>
+                        <div class="dayNum">16</div>
+                        <div class="dayNum">17</div>
+                        <div class="dayNum">18</div>
+                        <div class="dayNum">19</div>
+                        <div class="dayNum">20</div>
+                        <div class="dayNum">21</div>
+                        <div class="dayNum">22</div>
+                        <div class="dayNum">23</div>
+                        <div class="dayNum">24</div>
+                        <div class="dayNum">25</div>
+                        <div class="dayNum">26</div>
+                        <div class="dayNum">27</div>
+                        <div class="dayNum">28</div>
+                        <div class="dayNum">29</div>
+                        <div class="dayNum">30</div>
+                        <div class="dayNum">31</div>
+                        <div class="light">1</div>
+                        <div class="light">2</div>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <h2 class="cardTitle">Weather - Widget</h2><hr />
+                <a class="weatherwidget-io" href="https://forecast7.com/en/33d60n101d97/79416/?unit=us" data-label_1="LUBBOCK, Texas" data-label_2="WEATHER" data-theme="pure" >LUBBOCK, Texas WEATHER</a>
+            </div>
+            
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        var myVar = setInterval(function() {
+            myTimer();
+        }, 1000);
+
+        function myTimer() {
+            var d = new Date();
+            document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+        }
+
+        !function(d,s,id){
+            var js,fjs=d.getElementsByTagName(s)[0];
+            if(!d.getElementById(id)){
+                js=d.createElement(s);
+                js.id=id;
+                js.src='https://weatherwidget.io/js/widget.min.js';
+                fjs.parentNode.insertBefore(js,fjs);
+            }
+        }(document,'script','weatherwidget-io-js');
+
+    </script>
+</body>
+</html>

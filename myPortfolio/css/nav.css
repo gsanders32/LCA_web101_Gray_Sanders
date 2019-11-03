@@ -2,7 +2,7 @@ body, html{
     margin: 0px;
     padding-bottom: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    background: url("../image/background07.png") no-repeat center center fixed;
+    background: url("../image/background.jpg") no-repeat center center fixed;
     background-size: cover;
     height: 100%;
   }
@@ -45,7 +45,8 @@ body, html{
   }
 
   @media screen and (max-width: 600px) {
-      .topnav img,a:not(.active) {display: none;}
+      .topnav  a:not(.active) {display: none;}
+      .navigation-bar {display: none;}
       .topnav a.icon {
       float: left;
       display: block;

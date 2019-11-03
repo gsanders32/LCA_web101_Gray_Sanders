@@ -23,7 +23,7 @@
   font-weight: bold;
   font-size: large;
   padding: 25px 25px 6px;
-  background-color: white;
+  background-color: #f2f2f2;
   height: 45px;
   border-radius: 10px;
 }
@@ -39,7 +39,7 @@
 
 .box {
     padding: 1em;
-    background-color: white;
+    background-color: #f2f2f2;
     border-radius: 10px;
 }
 
