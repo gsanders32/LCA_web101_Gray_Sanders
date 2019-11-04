@@ -28,7 +28,7 @@ h1 {
 .container {
     margin-top: 25px;
     display: flex;
-    height: 324px;
+    /* height: 324px; */
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -50,33 +50,39 @@ section {
 
 input {
     border: 0;
-    height: 30px;
+    height: 100px;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 4rem;
     padding-left: 10px;
 }
 
 textarea {
     border: 0;
-    height: 70px;
+    height: 175px;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 4rem;
     text-align: top;
 }
 
 button {
     background-color: black;
     border: 0;
-    height: 40px;
+    height: 150px;
     color: white;
-    width: 30%;
-    margin-top: 10px;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 3rem;
 }
 
+.large {
+    font-size: 3rem;
+    text-align: left;
+}
 
 @media (min-width: 800px) {
     .container {
         font-size: 1rem;
+        height: 324px;
     }
 
     h2 {
@@ -91,6 +97,25 @@ button {
         width: 270px;
         height: 324px; 
         text-align: left;
-        
+    }
+
+    .large {
+        font-size: 1rem;
+    }
+
+    input {
+        height: 30px;
+        font-size: 1.5rem;
+    }
+
+    textarea {
+        height: 70px;
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1rem;
+        height: 40px;
+        width: 30%;
     }
 }
