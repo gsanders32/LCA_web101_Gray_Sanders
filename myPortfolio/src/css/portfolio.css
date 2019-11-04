@@ -1,0 +1,9 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #f2f2f2
+}
+
+section {
+    padding: 20px;
+}
