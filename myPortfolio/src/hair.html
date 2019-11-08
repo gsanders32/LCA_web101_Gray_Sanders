@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="./css/hair/nav.css">
+    <link rel="stylesheet" href="./css/hair/hair.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="./image/hair/logo.jpg" alt="">
+        </div>
+        <div class="navTop" id="myTopnav">
+            <nav >
+                <a class="active" href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Gallery</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i></a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <article id="landingImage">
+            <img src="./image/hair/the-beacon.jpg" alt="">
+            <article>
+                <h2>the beacon to all mankind</h2>
+                <p>Our website templates are created with</p>
+                <p>inspiration, checked for quality and originality</p>
+                <p>and meticulously sliced and coded.</p>
+                <button>Read More</button>
+            </article>
+        </article>
+        <div class="thumbContainer">
+            <article class="thumb">
+                <img src="./image/hair/the-father.jpg" alt="">
+                <h2>The Father</h2>
+            </article>
+            <article class="thumb">
+                <img src="./image/hair/the-actor.jpg" alt="">
+                <h2>The Actor</h2>
+            </article>
+            <article class="thumb">
+                <img src="./image/hair/the-nerd.jpg" alt="">
+                <h2>The Nerd</h2>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>&copy; 2023 by Mustacchio. All rights reserved.</p>
+        </div>
+        <div></div>
+        <div>
+            <a href="#" target="_blank" rel="noopener noreferrer"><i class="icon fa fa-twitter-square fa-3x"></i></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><i class="icon fa fa-facebook-square fa-3x"></i></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><i class="icon fa fa-google-plus-square fa-3x"></i></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><i class="icon fa fa-pinterest-square fa-3x"></i></a>
+        </div>
+    </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "navTop") {
+                x.className += " responsive";
+            } else {
+                x.className = "navTop";
+            }
+        }
+    </script>
+</body>
+
+</html>
