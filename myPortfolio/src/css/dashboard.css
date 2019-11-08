@@ -163,3 +163,37 @@ input[type="checkbox"]:checked + label{
     width: 90%;
   }
 }
+@media (min-width: 1200px) { 
+  .innerContainer {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .cardImg {
+    height: 600px;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  .dateTime {
+    font-size: 30px;
+    height: 60px;
+  }
+
+  .message {
+    font-size: 30px;
+    height: 70px;
+    margin-left: -165px;
+  }
+
+  .cardTitle {
+    font-size: 25px;
+  }
+
+  .weatherwidget-io {
+    width: 90%;
+  }
+}
