@@ -14,10 +14,6 @@ header {
     /* background-color: pink; */
 }
 
-header, img {
-    /* padding: 1rem; */
-    /* object-fit: scale-down; */
-}
 
 main.container {
     width: 100%;
@@ -133,8 +129,13 @@ footer a:hover{
     }
     article#landingImage>article {
         top: 30%;
-        left: 60%;
+        left: 55%;
         font-size: 1rem;
+    }
+
+    article>button {
+        font-size: 1.5rem;
+        padding: 1rem;
     }
 
     .thumbContainer {
@@ -170,9 +171,14 @@ footer a:hover{
     }
 
     article#landingImage>article {
-        top: 30%;
-        left: 60%;
+        top: 25%;
+        left: 45%;
         font-size: 2rem;
+    }
+
+    article>button {
+        font-size: 2rem;
+        padding: 1.5rem;
     }
 
     footer {
