@@ -82,7 +82,7 @@ section {
     border-top: none; */
   }
 
-  a.icon {
+.iconBig {
     /* padding:1em; */
     text-align: center;
     display:inline-block;
@@ -97,7 +97,7 @@ section {
     transition: all 0.2s ease-in-out;
 }
 
-a.icon:hover {
+.iconBig:hover {
     color: rgb(68, 66, 66);
 }
 
@@ -106,6 +106,7 @@ iframe {
     margin: 0;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 video {
@@ -250,7 +251,7 @@ button {
         height: 200px;
     }
 
-    a.icon {
+    .iconBig {
         font-size: 3.5rem;
     }
 
@@ -259,7 +260,7 @@ button {
 
   @media (min-width: 1200px) {
     .container {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         column-gap: 10px;
     }
 
@@ -271,7 +272,7 @@ button {
         font-size: 2rem;
     }
 
-    a.icon {
+    .iconBig {
         font-size: 5rem;
     }
   }

@@ -18,16 +18,18 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <nav class="topnav" id="myTopnav">
+    <div class="topnav" id="myTopnav">
         <img class="navigation-bar" src="../images/gslogo.png" alt="logo">
-        <a href="#">Contact</a>
-        <a href="./blog.html">Blog</a>
-        <a href="#">About</a>
-        <a href="./resume.html">Resume</a>
-        <a href="../index.html">Home</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <nav>
+            <a href="#">Contact</a>
+            <a href="./blog.html">Blog</a>
+            <a href="#">About</a>
+            <a href="./resume.html">Resume</a>
+            <a href="../index.html">Home</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i></a>
-    </nav>
+        </nav>  
+    </div>
     <div>
         <header>
             <h1>Gray Sanders</h1>
@@ -42,13 +44,28 @@
                     <button class="tablinks01" onclick="openTab01(event, 'hair')">Hair</button>
                 </div>
                 <section id="dashboard" class="tabcontent tabcontent01">
-                    <a class="icon" href="./dashboard.html">Dashboard <i class="fa fa-cogs fa-5x"></i></a>
+                    <a href="./dashboard.html">Dashboard</a>
+                    <a href="./dashboard.html"><div class="video-container">  
+                        <div class="video">
+                            <iframe src="./dashboard.html" scrolling="no" frameborder="0"></iframe>
+                        </div>
+                    </div></a>
                 </section>
                 <section id="nasa" class="tabcontent tabcontent01">
-                    <a class="icon" href="./nasa.html" target="_blank" rel="noopener noreferrer">Nasa <i class="fa fa-rocket fa-5x"></i></a>
+                    <a href="./nasa.html">Nasa</a>
+                    <div class="video-container">  
+                        <div class="video">
+                            <iframe src="./nasa.html"  frameborder="0"></iframe>
+                        </div>
+                    </div>
                 </section>
                 <section id="hair" class="tabcontent tabcontent01">
-                    <a class="icon" href="./hair.html" target="_blank" rel="noopener noreferrer">Hair <i class="fa fa-scissors fa-5x"></i></a>
+                        <a href="./hair.html">Hair</a>
+                        <div class="video-container">  
+                            <div class="video">
+                                <iframe src="./hair.html"  frameborder="0"></iframe>
+                            </div>
+                        </div>
                 </section>
             </div>
             <div class="card">
