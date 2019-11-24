@@ -1,0 +1,80 @@
+.container {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    height: calc(100vh - 50px);
+    width: 100vw;
+
+}
+.bg {
+    position: relative;
+    margin: 1rem;
+    background-color: #f2f2f2;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pad {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+.box01 {    
+    background-color: red;
+}
+
+.box02 {
+    background-color: blue;
+}
+
+.box03 {
+    background-color: yellow;
+}
+
+.box04 {
+    background-color: seagreen;
+}
+
+.box05 {
+    background-color: pink;
+}
+
+.box06 {
+    background-color: black;
+}
+
+.box07 {
+    background-color: orange;
+}
+
+.box08 {
+    background-color: tan;
+}
+
+.box09 {
+    background-color: tomato;
+}
+
+.box10 {
+    background-color: thistle;
+}
+
+.bg .odd {
+    transition: transform 2s;
+}
+
+.bg:hover .odd {
+    transform: translate(35vw, 0px) rotate(360deg) scale(2);
+}
+.bg .even {
+    transition: transform 2s;
+}
+
+.bg:hover .even {
+    transform: translate(-35vw, 0px) rotate(-360deg) scale(.5);
+}
