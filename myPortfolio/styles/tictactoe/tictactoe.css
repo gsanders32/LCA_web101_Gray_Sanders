@@ -1,0 +1,124 @@
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: 50vh;
+    background-color: #f2f2f2;
+    padding: 15px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 100%;
+    width: 100%;
+}
+
+.box {
+    position: relative;
+    height: 100%;
+    font-size: 7rem;
+}
+
+.center p{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+/* Game board */
+.topLeft {
+    border-bottom: 2px solid #6B6969;
+}
+
+.top {
+    border-right: 2px solid #6B6969;
+    border-left: 2px solid #6B6969;
+    border-bottom: 2px solid #6B6969;
+}
+
+.topRight {
+    border-bottom: 2px solid #6B6969;
+}
+
+.middleLeft {
+    border-bottom: 2px solid #6B6969;
+}
+
+.middle {
+    border-right: 2px solid #6B6969;
+    border-left: 2px solid #6B6969;
+    border-bottom: 2px solid #6B6969;
+}
+
+.middleRight {
+    border-bottom: 2px solid #6B6969;
+}
+
+.bottom {
+    border-right: 2px solid #6B6969;
+    border-Left: 2px solid #6B6969;
+}
+
+/* Side bar */
+.sideBar {
+    grid-row: 1/4;
+    grid-column: 4/6;
+    background-color: #ccc;
+    margin-left: 15px;
+}
+
+form {
+    margin: 10px;
+}
+fieldset {
+    padding: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 2rem;
+}
+input {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 0;
+    height: 2rem;
+    font-size: 1.5rem;
+    padding-left: 10px;
+}
+.buttonSpace {
+    display: flex;
+    justify-content: space-between;
+}
+button {
+    border: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 2rem;
+    color: #fff;
+    width: 40%;
+}
+.red {
+    background-color: #d9534f;
+}
+.blue {
+    background-color: #4e9ed4;
+}
+
+.redMarker {
+    color: #d9534f;
+}
+.blueMarker {
+    color: #4e9ed4;
+}
+
+.divCenter {
+    display: flex;
+    justify-content: space-around;   
+}
