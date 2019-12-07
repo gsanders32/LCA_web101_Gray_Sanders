@@ -96,7 +96,7 @@ hr {
 }
 
 label{
-  padding: 5px;
+  padding: 4px;
 	cursor: pointer;
 	float: left;
 	width: 95%;
@@ -132,7 +132,7 @@ input[type="checkbox"]:checked + label{
   margin-bottom: 1rem;
 }  
 
-input {
+input#newItemText {
   padding-left: 10px;
   border: 0;
   height: 2rem;
