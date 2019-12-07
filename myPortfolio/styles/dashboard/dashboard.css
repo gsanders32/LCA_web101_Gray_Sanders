@@ -128,6 +128,22 @@ input[type="checkbox"]:checked + label{
   margin-bottom: 15px; */
   }
 
+.listInput {
+  margin-bottom: 1rem;
+}  
+
+input {
+  padding-left: 10px;
+  border: 0;
+  height: 2rem;
+}
+
+.buttonToDo {
+  color: white;
+  background-color: #008CBA;
+  border: 0;
+  height: 2rem;
+}
 
 @media (min-width: 800px) { 
   .innerContainer {

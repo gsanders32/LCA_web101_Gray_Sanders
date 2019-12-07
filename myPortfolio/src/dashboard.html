@@ -104,6 +104,10 @@
             <div class="card">
                 <h2 class="cardTitle">Todo List</h2><hr />
                 <div class="todoWrapper">
+                    <div class="listInput">
+                        <input id="newItemText" type="text">
+                        <button class="buttonToDo" id="submitItem" >Add Item</button>
+                    </div>
                     <ul class="todoList">
                         <li>
                             <input type="checkbox" id="1" checked>
@@ -122,8 +126,8 @@
                             <label for="4">Time</label>
                         </li>
                         <li>
-                            <input type="checkbox" id="4" checked>
-                            <label for="4">Background Image</label>
+                            <input type="checkbox" id="5" checked>
+                            <label for="5">Background Image</label>
                         </li>
                     </ul>
                 </div>
@@ -222,5 +226,7 @@
         }(document,'script','weatherwidget-io-js');
 
     </script>
+    <script src="../scripts/jquery/jquery.min.js"></script>
+    <script src="../scripts/todolist/todolist.js"></script>
 </body>
 </html>
