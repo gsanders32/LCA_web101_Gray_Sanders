@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../styles/dashboard/calendar.css">
     <!-- <link rel="stylesheet" href="./css/calculatorFlexGrid.css"> -->
     <!-- <link rel="stylesheet" href="./css/carousel.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Dashboard</title>
 </head>
@@ -34,6 +35,14 @@
                     <div class="dateTime">
                         <script> document.write(new Date().toDateString()); </script><br />
                         <div id="clock"></div>
+                        <div class="geo">
+                            <div>Country: <span id="country"></span></div>
+                            <div>State: <span id="state"></span></div>
+                            <div>City: <span id="city"></span></div>
+                            <div>Latitude: <span id="latitude"></span></div>
+                            <div>Longitude: <span id="longitude"></span></div>
+                            <div>IP: <span id="ip"></span></div>
+                        </div>
                     </div>
                     <div class="message">
                         <p>Gray</p>
@@ -197,6 +206,7 @@
         </div>
     </div>
     <script>
+        //Nav bar
         function myFunction() {
             var x = document.getElementById("myTopnav");
             if (x.className === "topnav") {
@@ -206,6 +216,7 @@
             }
         }
 
+        //Clock timer
         var myVar = setInterval(function() {
             myTimer();
         }, 1000);
@@ -215,6 +226,8 @@
             document.getElementById("clock").innerHTML = d.toLocaleTimeString();
         }
 
+
+        //Weather
         !function(d,s,id){
             var js,fjs=d.getElementsByTagName(s)[0];
             if(!d.getElementById(id)){
@@ -224,6 +237,20 @@
                 fjs.parentNode.insertBefore(js,fjs);
             }
         }(document,'script','weatherwidget-io-js');
+
+        $.ajax({
+		url: "https://geolocation-db.com/jsonp",
+		jsonpCallback: "callback",
+		dataType: "jsonp",
+		success: function( location ) {
+			$('#country').html(location.country_name);
+			$('#state').html(location.state);
+			$('#city').html(location.city);
+			$('#latitude').html(location.latitude);
+			$('#longitude').html(location.longitude);
+			$('#ip').html(location.IPv4);  
+		}
+	});		
 
     </script>
     <script src="../scripts/jquery/jquery.min.js"></script>
