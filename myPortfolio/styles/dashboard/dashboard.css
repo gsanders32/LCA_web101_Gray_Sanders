@@ -200,15 +200,6 @@ input#newItemText {
     font-size: 4em;
   }
 
-  .dateTime {
-    font-size: 30px;
-    height: 200px;
-  }
-
-  .geo {
-    font-size: 15px;
-    
-  }
 
   .message {
     font-size: 30px;
