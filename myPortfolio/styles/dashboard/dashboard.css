@@ -59,7 +59,8 @@ hr {
   padding: 5px;
   padding-bottom: 10px;
   background: rgb(242,242,242, 0.4);
-  height: 30px;
+  height: 150px;
+  width: 200px;
   border-radius: 2px;
   color: #f2f2f2;
 }
@@ -162,7 +163,12 @@ input#newItemText {
 
   .dateTime {
     font-size: 30px;
-    height: 60px;
+    height: 200px;
+    width: 250px;
+  }
+
+  .geo {
+    font-size: 15px;
   }
 
   .message {
@@ -196,7 +202,12 @@ input#newItemText {
 
   .dateTime {
     font-size: 30px;
-    height: 60px;
+    height: 200px;
+  }
+
+  .geo {
+    font-size: 15px;
+    
   }
 
   .message {
