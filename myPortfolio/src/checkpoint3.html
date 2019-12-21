@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/checkpoint3/checkpoint3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../scripts/jquery/jquery.min.js"></script>
+    <script src="../scripts/jquery/jQueryRotate.js"></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <img class="navigation-bar" src="../images/gslogo.png" alt="logo">
+        <nav>
+            <a href="./contact.html">Contact</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./about.html">About</a>
+            <a href="./resume.html">Resume</a>
+            <a href="../index.html">Home</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+        </nav>  
+    </div>
+    <div class="container">
+        <div></div>
+        
+        <div class="board">
+            <div></div>
+            <div><h1>Click the Hammer!</h1></div>
+            <div></div>
+           <div class="left"></div>
+           <div id="imageContainer">
+            <img class="top01" src="../images/checkpoint3/hammer.png" alt="">
+            <img class="top02" style="display:none" src="../images/checkpoint3/flash.png" alt="">
+            <img class="bottom" src="../images/checkpoint3/anvilV2.png" alt="">
+           </div>
+           <div class="right"></div>
+           <div></div>
+           <div><input class="clickInput" id="clickCount" type="text" value="Strike Count: 0" disabled></div>
+           <div></div>
+
+        </div>
+        <div ></div>
+        
+    </div>
+
+    
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+            x.className += " responsive";
+            } else {
+            x.className = "topnav";
+            }
+        }
+    </script>
+    <script src="../scripts/checkpoint3/checkpoint3.js"></script>
+</body>
+</html>
