@@ -1,0 +1,49 @@
+.container {   
+    width: 100vw;
+    height: calc(100vh - 48px);
+    background-color: #f2f2f2;
+    padding-top: 50px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: 1fr 260px 1fr;
+}
+
+#clickCount {
+    border: 0;
+    height: 35px;
+    font-size: 25;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #545454;
+}
+
+
+@media (min-width: 500px) {
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50vw;
+        height: 50vh;
+        background-color: #f2f2f2;
+        padding: 15px;
+    }
+    .board {
+        display: grid;
+        grid-template-rows: 2fr 10fr 2fr;
+        height: 100%;
+        width: 100%;
+    }
+}
+
